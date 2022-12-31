@@ -1,0 +1,30 @@
+[
+	{
+		"id": "01",
+		"question": "Which of the following is the correct name of React.js?",
+		"options": ["React", "React.js", "ReactJS", "All of the above"],
+		"answer": "All of the above"
+	},
+	{
+		"id": "02",
+		"question": "Which of the following command is used to install create-react-app?",
+		"options": [
+			"npm install -g create-react-app",
+			"npx create-react-app my-app",
+			"npm install create-react-app",
+			"npm install -f create-react-app"
+		],
+		"answer": "npx create-react-app my-app"
+	},
+	{
+		"id": "03",
+		"question": "What of the following is used in React.js to increase performance?",
+		"options": [
+			"Original DOM",
+			"Virtual DOM",
+			"Both A and B.",
+			"None of the above."
+		],
+		"answer": "Virtual DOM"
+	}
+]
