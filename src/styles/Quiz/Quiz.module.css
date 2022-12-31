@@ -1,0 +1,139 @@
+.quiz {
+}
+
+.count {
+	font-size: 20px;
+	font-weight: 700;
+	color: #555;
+	border-bottom: 2px dashed #ddd;
+	padding-bottom: 20px;
+	margin-bottom: 40px;
+}
+
+.count .current-question {
+	color: #ff7322;
+}
+
+.count .total-question {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.question {
+	font-size: 28px;
+	line-height: 37px;
+	font-weight: 700;
+	color: #333;
+	margin-bottom: 40px;
+}
+
+.options {
+}
+
+.label {
+	display: block;
+	position: relative;
+	padding: 15px 15px 15px 50px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	line-height: 27px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	transition: 0.2s ease-in;
+}
+
+.label:hover {
+	border-color: #4cd880;
+}
+
+.label input[type='radio'] {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.radio {
+	position: absolute;
+	top: 17px;
+	left: 15px;
+	height: 20px;
+	width: 20px;
+	border-radius: 25px;
+	background-color: transparent;
+	border: 2px solid #eee;
+	transition: 0.2s ease-in;
+}
+
+.label input[type='radio']:hover ~ .radio {
+	border-color: #4cd880;
+}
+
+/* When the checkbox is checked/hover, add background */
+.label input[type='radio']:checked ~ .radio {
+	/* background-color: #4cd880;
+	border-color: #4cd880;
+	transition: 0.3s ease-in-out; */
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.radio:after {
+	content: '';
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.label input[type='radio']:checked ~ .radio:after,
+.label input[type='radio']:hover ~ .radio:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.label .radio:after {
+	left: 7px;
+	top: 3px;
+	width: 4px;
+	height: 9px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.success,
+.success:hover {
+	border-color: #4cd880;
+}
+
+.label.success input[type='radio'] ~ .radio {
+	background-color: #4cd880;
+	border-color: #4cd880;
+}
+
+.label.success input[type='radio'] ~ .radio:after {
+	display: block;
+}
+
+.danger,
+.danger:hover {
+	border-color: red;
+}
+
+.label.danger input[type='radio'] ~ .radio {
+	background-color: red;
+	border-color: red;
+}
+
+.label.danger input[type='radio'] ~ .radio:after {
+	display: block;
+}

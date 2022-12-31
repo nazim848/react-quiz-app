@@ -1,0 +1,33 @@
+.btn {
+	border: 0;
+	padding: 16px 45px;
+	background: #4cd880;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	transition: 0.3s all;
+}
+
+.btn:hover {
+	background: #41cd75;
+}
+
+.btn:disabled {
+	opacity: 0.5;
+}
+
+.reset {
+	background: #f3f3f3;
+	color: #444;
+	float: right;
+}
+
+.reset:hover {
+	background: #eee;
+}
