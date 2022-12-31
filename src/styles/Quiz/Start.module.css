@@ -4,5 +4,14 @@
 
 .title {
 	font-size: 36px;
+	line-height: 44px;
 	margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+	.title {
+		font-size: 26px;
+		line-height: 34px;
+		margin-bottom: 25px;
+	}
 }

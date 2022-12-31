@@ -27,9 +27,6 @@
 	margin-bottom: 40px;
 }
 
-.options {
-}
-
 .label {
 	display: block;
 	position: relative;
@@ -136,4 +133,17 @@
 
 .label.danger input[type='radio'] ~ .radio:after {
 	display: block;
+}
+
+@media (max-width: 768px) {
+	.question {
+		font-size: 24px;
+		line-height: 30px;
+		margin-bottom: 30px;
+	}
+
+	.label {
+		font-size: 17px;
+		line-height: 26px;
+	}
 }

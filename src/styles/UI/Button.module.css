@@ -31,3 +31,10 @@
 .reset:hover {
 	background: #eee;
 }
+
+@media (max-width: 768px) {
+	.btn {
+		padding: 12px 30px;
+		font-size: 16px;
+	}
+}

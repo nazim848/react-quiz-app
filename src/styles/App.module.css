@@ -23,3 +23,13 @@ h3,
 h4 {
 	margin: 0;
 }
+
+@media (max-width: 768px) {
+	body {
+		margin: 20px;
+	}
+
+	.wrapper {
+		padding: 20px;
+	}
+}
